@@ -1,96 +1,133 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Tung</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <!-- Google fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Tung</title>
+  <meta name="description" content="Tung is an chatbot that will automatically translate your conversations into your most comfortable language.">
+  <meta name="author" content="Jonny Gwillim">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Bootstrap -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <nav>
-          <div class="container-fluid">
-            <div class="logo">
-              <h1>Tung</h1>
-              <img src="" alt="">
-            </div>
-            <div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#what">What do we do?</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#how">How do we do it?</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#try">Try it</a>
-                    </li>
-                </ul>
-            </div>
-          </div>
-        </nav>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="dist/css/normalize.css">
+  <link rel="stylesheet" href="dist/css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
 
-        <header id="what">
-          <div class="contianer-fluid">
-            <div class="row">
-              <div class="col-xs-12 col-md-6">
-                <p>Tung allows you to communicate comfortably with anyone around world without any language barriers</p>
-                <button class="cta">Try it</button>
-              </div>
-              <div class="col-xs-12 col-md-6">
-                <img src="img/chatting-friends.png" alt="" width="50%">
-              </div>
-            </div>
-          </div>
-        </header>
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-        <section id="how" class="how">
-          <div>
-            <p>Tung is a chatbot that connects with facebook to automatically translate your messages into the recipients prefered language</p>
-            <button class="cta">Connect</button>
-          </div>
-        </section>
+  <!-- Font Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://use.fontawesome.com/f65ce2cdf1.js"></script>
 
-        <section class="testimonials">
-          <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit suscipit fermentum.</p>
-            <small>Johan Wilhelmson</small>
-          </div>
-        </section>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
-        <footer id="try">
-          <div>
-            <p>Add Tung on Facebook to start chatting in another language!</p>
-            <button class="cta">Add to Facebook</button>
-          </div>
-        </footer>
+</head>
+<body>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Navigation
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="row">
+        <div class="one column">
+          <h4>Tung</h4>
+        </div>
+        <div class="eleven columns">
+          <ul class="navbar-list">
+            <li id="try-button" class="navbar-item"><a href="#">Try it</a></li>
+            <li id="how-button" class="navbar-item"><a href="#">How we do it</a></li>
+            <li id="what-button" class="navbar-item"><a href="#">What we do</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-85796843-1','auto');ga('send','pageview');
-        </script>
-    </body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div id="what" class="section hero">
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <h4 class="hero-heading">
+            Tung allows you to communicate comfortably with anyone around world without any language barriers
+          </h4>
+        </div>
+        <div class="one-half column">
+          <img class="chatting" src="images/chatting-friends.png" width="100%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="one-half column">
+          <a class="button button-primary" href="http://www.facebook.com/tungchatbot">Try it!</a>
+        </div>
+        <div class="one-half column">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="how" class="section how">
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <h4 class="hero-heading">
+            Tung is a chatbot that connects with facebook to automatically translate your messages into the recipients prefered language
+          </h4>
+          <a class="button button-primary" href="http://www.facebook.com/tungchatbot">Connect!</a>
+        </div>
+        <div class="one-half column phones">
+          <img class="phone" src="images/iphone.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section testimonial">
+    <div class="container">
+      <div class="row">
+        <h4 class="hero-heading">
+          <i class="fa fa-quote-left" aria-hidden="true" style="color: #FF7473;"></i>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit suscipit fermentum
+          <i class="fa fa-quote-right" aria-hidden="true" style="color: #FF7473;"></i>
+        </h4>
+        <p>Johan Wilhelmsson</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="try" class="section try">
+    <div class="container">
+      <div class="row">
+        <div class="u-full-width">
+          <h4 class="hero-heading">
+            Add Tung on Facebook and start chatting
+          </h4>
+          <a class="button button-primary" href="http://www.facebook.com/tungchatbot">Add to Facebook!</a>
+        </div>
+        <div class="one-half column">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="js/ui.js"></script>
+</body>
 </html>

@@ -1,0 +1,199 @@
+/*body {
+  background-color: #FF7473;
+}*/
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  border-bottom: 3px #FEFEFE solid !important;
+  border-radius: 0px;
+  width: 100%;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+/* Navbar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar {
+  display: none;
+}
+nav > div > div > div.one.column {
+  padding: 1rem !important;
+}
+
+nav > div > div > div.eleven.columns {
+  padding: 2rem;
+}
+@media (min-width: 750px) {
+  .navbar {
+    background-color: #FF7473;
+    display: block;
+    width: 100%;
+    height: 6.5rem;
+    z-index: 99;
+    border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
+  }
+  .navbar-list {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  .navbar-item a {
+    text-decoration: none;
+    color: #FEFEFE;
+  }
+  .navbar-item a:hover {
+    color: #FEFEFE;
+  }
+  .navbar-item {
+    position: relative;
+    float: right;
+    margin-bottom: 0;
+    margin-left: 3rem;
+  }
+}
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero {
+  background-color: #FF7473;
+}
+
+.phones {
+  position: relative;
+}
+.phone {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+.phone + .phone {
+  display: none;
+}
+
+/* How
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.how {
+  background-color: #47B8E0;
+  padding: 9rem 0 19rem !important;
+}
+
+/* Testimonails
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.testimonial {
+  background-color: #FFF;
+  color: #000;
+}
+
+/* Try
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.try {
+  background-color: #34314C;
+  padding: 5rem 0 5rem !important;
+}
+
+/* Categories
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.categories {
+  background-image: url('../images/values-bg.jpg');
+  background-size: cover;
+  color: #fff;
+}
+.categories .section-description {
+  margin-bottom: 4rem;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+  }
+  .hero {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
+  }
+  .phone {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+  }
+  .phone + .phone {
+    top: -6rem;
+    display: block;
+    max-width: 73.8%;
+    right: 0;
+    z-index: 2;
+    max-height: 338px;
+  }
+  .hero-heading {
+    font-size: 2.4rem;
+  }
+  .button {
+    width: 20rem;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .hero {
+    height: 190px;
+  }
+  .hero-heading {
+    font-size: 2.6rem;
+  }
+  .section {
+    padding: 14rem 0 15rem;
+  }
+  .hero {
+    padding: 16rem 0 14rem;
+  }
+  .section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .phone {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+  }
+  .phone + .phone {
+    top: -12rem;
+    max-height: 472px;
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .section {
+    padding: 10rem 0 9rem;
+  }
+  .hero {
+    padding: 14rem 0;
+  }
+  .hero-heading {
+    font-size: 3.0rem;
+  }
+  .phone {
+    top: -16rem;
+    max-height: 615px;
+  }
+  .phone + .phone {
+    top: -14rem;
+    max-height: 570px;
+  }
+  .button {
+    width: 30rem;
+  }
+}
