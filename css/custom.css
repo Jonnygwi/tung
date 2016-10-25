@@ -1,6 +1,13 @@
-/*body {
-  background-color: #FF7473;
-}*/
+/* Oops
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#oops-body {
+  background-image: url('../images/background-tile.png') !important;
+  height: 100vh;
+}
+.section#oops {
+  font-weight: bold;
+}
+
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
@@ -9,6 +16,16 @@
   width: 100%;
 }
 
+#social-button {
+  border-top: 1px #47B8E0 solid;
+  border-left: 1px #47B8E0 solid;
+  border-right: 1px #47B8E0 solid;
+  background-color: #47B8E0;
+}
+
+#oops h1, h2 {
+  font-weight: 600;
+}
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
@@ -44,7 +61,7 @@ nav > div > div > div.eleven.columns {
     list-style: none;
     margin-bottom: 0;
   }
-  .navbar-item a {
+  .navbar a {
     text-decoration: none;
     color: #FEFEFE;
   }

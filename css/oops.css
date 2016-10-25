@@ -1,0 +1,8 @@
+/* Oops
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  background-image: url('images/background-tile.png') !important;
+}
+.navbar {
+  background-color: inherit;
+}
